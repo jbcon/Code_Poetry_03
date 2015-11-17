@@ -22,6 +22,7 @@ public:
     Head head;
     string fate;
     string soul;
+    bool unafraid;
 };
 
 
@@ -55,12 +56,15 @@ public:
 class Shade{
 public:
     Obstacle horror;
+    bool find(bool what){return true;}
 };
 
 Shade shade;
+Shade menace_of_the_years;
 Obstacle gate;
 Obstacle scroll;
 Obstacle chance;
+bool circumstance = false;
 
 void out_from(bool c){}
 float beyond(Place p){return INFINITY;}
